@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Stitch Design</title>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900&amp;family=Noto+Sans+JP:wght@400;500;700;900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Inter", "Noto Sans JP", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+  <div class="flex flex-col min-h-screen">
+    <header
+      class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-4">
+            <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_319)">
+                <path
+                  d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                  fill="currentColor"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_319">
+                  <rect fill="white" height="48" width="48"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <h2 class="text-xl font-bold text-slate-900 dark:text-white">Portfolio</h2>
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+              href="#about">About Me</a>
+            <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+              href="#skills">Skill</a>
+            <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+              href="#projects">Personal Projects</a>
+            <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors"
+              href="#contact">Contact</a>
+            <a class="px-4 py-2 bg-primary text-white text-sm font-bold rounded-lg hover:bg-primary/90 transition-colors"
+              href="https://github.com/mk7sub" rel="noopener noreferrer" target="_blank">
+              GitHub
+            </a>
+          </nav>
+          <button class="md:hidden text-slate-900 dark:text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <section class="relative h-[70vh] min-h-[500px] flex items-center justify-center text-white bg-cover bg-center"
+        style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMeVwZvYN67oCiw9PNVvA5QUBCKue6--7nI1P6R3x8qTa0_Q_UVmLkLWDssn_CBhshsrCmlTy7Dz3ao0TjIpp0Pmbp29GrgaWPyfOR8PLY7l6P8b1dLMGYfdyFpCaDCyt9sxMJMM2x04k46n3tOt2LEMO56xP7r99ViCkg2PRJ4dQ8CbD8DhMwRa4NRY1StKzDlw88SxdTT2LdlN1i1TBy9uJAD6X8eI-70b2zK6JFsIRwiBxXouOnqXi0yy3IypzdAQJP7CqOwOM9");'>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div class="max-w-3xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter">Makito Komi</h1>
+            <p class="mt-4 text-3xl md:text-4xl font-bold tracking-tight">Portfolio</p>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24" id="about">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 class="text-3xl font-bold tracking-tight text-center text-slate-900 dark:text-white">About Me</h2>
+          <div class="mt-8 flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
+            <div class="flex-shrink-0">
+              <img alt="Makito Komi" class="w-40 h-40 rounded-full object-cover"
+                src="https://lh3.googleusercontent.com/a-/ALV-UjV_9deqC0vE0Yp_Bq7p-L7p_yT4N9wZ_y_4A-Y8S2e_k7g=s288-c-no" />
+            </div>
+            <div class="text-lg text-slate-600 dark:text-slate-400">
+              <div class="space-y-2">
+                <p><span class="font-bold">名前:</span> 小見 牧音</p>
+                <p><span class="font-bold">所在地:</span> 東京都</p>
+              </div>
+              <p class="mt-6">
+                Webアプリケーション開発において、特にサーバーサイドの設計・開発に強みを持つWebエンジニアです。PHP(Laravel)やPythonを用いたバックエンド開発が得意です。フロントエンド開発の知識も活かし、ユーザーにとって使いやすいアプリケーション開発を心がけています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24 bg-slate-50 dark:bg-slate-900/50" id="skills">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 class="text-3xl font-bold tracking-tight text-center text-slate-900 dark:text-white">Skill</h2>
+          <div class="mt-12 grid md:grid-cols-2 gap-x-12 gap-y-16 max-w-4xl mx-auto">
+            <div class="space-y-8">
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white">OS</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full text-left text-slate-600 dark:text-slate-400">
+                  <thead>
+                    <tr class="border-b dark:border-slate-700">
+                      <th class="py-3 pr-4 font-semibold">OS</th>
+                      <th class="py-3 px-4 font-semibold">経験年数</th>
+                      <th class="py-3 pl-4 font-semibold">レベル</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">Windows</td>
+                      <td class="py-3 px-4">1年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-yellow-400 text-xl">
+                          <span>★★★</span>
+                        </div>
+                        <span class="text-slate-300 dark:text-slate-600">☆☆</span>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">Linux</td>
+                      <td class="py-3 px-4">4年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">Unix</td>
+                      <td class="py-3 px-4">1年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="space-y-8">
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Language</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full text-left text-slate-600 dark:text-slate-400">
+                  <thead>
+                    <tr class="border-b dark:border-slate-700">
+                      <th class="py-3 pr-4 font-semibold">言語</th>
+                      <th class="py-3 px-4 font-semibold">経験年数</th>
+                      <th class="py-3 pl-4 font-semibold">レベル</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">PHP</td>
+                      <td class="py-3 px-4">4年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">Python</td>
+                      <td class="py-3 px-4">2年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">JavaScript</td>
+                      <td class="py-3 px-4">2年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">VBA</td>
+                      <td class="py-3 px-4">2年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">C#</td>
+                      <td class="py-3 px-4">3ヶ月</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">Java</td>
+                      <td class="py-3 px-4">1年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="space-y-8">
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Database</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full text-left text-slate-600 dark:text-slate-400">
+                  <thead>
+                    <tr class="border-b dark:border-slate-700">
+                      <th class="py-3 pr-4 font-semibold">DB</th>
+                      <th class="py-3 px-4 font-semibold">経験年数</th>
+                      <th class="py-3 pl-4 font-semibold">レベル</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">PostgreSQL</td>
+                      <td class="py-3 px-4">4年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">Oracle</td>
+                      <td class="py-3 px-4">1年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">MySQL</td>
+                      <td class="py-3 px-4">9ヶ月</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="space-y-8">
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Tool &amp; Others</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full text-left text-slate-600 dark:text-slate-400">
+                  <thead>
+                    <tr class="border-b dark:border-slate-700">
+                      <th class="py-3 pr-4 font-semibold">ツール/その他</th>
+                      <th class="py-3 px-4 font-semibold">経験年数</th>
+                      <th class="py-3 pl-4 font-semibold">レベル</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">Git</td>
+                      <td class="py-3 px-4">3年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">Docker</td>
+                      <td class="py-3 px-4">9ヶ月</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">AWS</td>
+                      <td class="py-3 px-4">5ヶ月</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">Azure</td>
+                      <td class="py-3 px-4">3ヶ月</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-slate-800">
+                      <td class="py-3 pr-4">GCP</td>
+                      <td class="py-3 px-4">2年</td>
+                      <td class="py-3 pl-4">
+                        <div class="flex items-center gap-1 text-xl">
+                          <span class="text-yellow-400">★★★</span><span
+                            class="text-slate-300 dark:text-slate-600">☆☆</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24 bg-white dark:bg-background-dark" id="projects">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold tracking-tight text-center text-slate-900 dark:text-white">Personal Projects
+          </h2>
+          <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2 justify-center lg:px-32">
+            <div
+              class="flex flex-col bg-background-light dark:bg-slate-900/50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-md mx-auto">
+              <div class="aspect-video bg-cover bg-center"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLQiyQcSHehBB7MtO9KmEVhZBj-pI44Z0lUGWaq_MFVy5TtmEZMaj-kl-l9rhhovkl3w5ZRi21CPsFKG2YvZMxJvBCa66oDay9XIrEmEdMxxkVI8hUF3bTRdY_uMTLxVCxa3YyWJ4BR7u6K167o0n56abSXJ3qKzfnmDc-Stik10-XJXA_f-eutItmAchTkIVYkuecfhMlTim8FyDQeTDNm-6fhkA-74BiNJqOEmsAQrCxk_An7yLzj2bBm-p9V_kH-BOdNSg-M04F");'>
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">ドメイン価格比較Webアプリ</h3>
+                <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+                  ドメイン価格のコスパ比較を行うWebアプリ。WebスクレイピングはPythonとSelenium、WebAPIはPHP(Laravel)を使用して開発。</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col bg-background-light dark:bg-slate-900/50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-md mx-auto">
+              <div class="aspect-video bg-cover bg-center"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC96bQ-R10-zhm9Z4OiT8K5OS5PgvWwTMWX0QYyKFg1QOYbMwp0yX-DKoSF132wQNErTO8IFdt5-mY8xVlhGgFJ9oT4J-y0wfPDWhlLZWQOi2X4texouNKtgCbtcVF_k7kcqFSLXkRtIV8rir_0ykKtYJy46maqBf6RagL86qhA1ifWI7MLoNBUMiVyr0KvLrDNtNMDOICB8qEYSCdY0bpTdt_WV_rf8fuA9RT-tdhtYGqzKgSoJ-HugMzoWj4rz4QASSxY7gR8_ZwR");'>
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">買い物管理Webアプリ</h3>
+                <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+                  レシート画像から購入品のリスト化し、購入履歴の管理、商品情報の比較、および商品写真の管理を可能にするWebアプリ。WebAPIはPython(Flask)、画像処理はOpenCVやPillowを使用して開発。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24" id="contact">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-xl">
+          <h2 class="text-3xl font-bold tracking-tight text-center text-slate-900 dark:text-white">Contact</h2>
+          <form class="mt-12 space-y-6">
+            <div>
+              <label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="email">メールアドレス</label>
+              <div class="mt-1">
+                <input
+                  class="form-input block w-full rounded-lg border-slate-300 dark:border-slate-700 bg-background-light dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+                  id="email" name="email" placeholder="your.email@example.com" type="email" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="message">メッセージ</label>
+              <div class="mt-1">
+                <textarea
+                  class="form-textarea block w-full rounded-lg border-slate-300 dark:border-slate-700 bg-background-light dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+                  id="message" name="message" placeholder="メッセージを入力してください" rows="4"></textarea>
+              </div>
+            </div>
+            <div class="text-right">
+              <button
+                class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-bold rounded-lg text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-background-dark"
+                type="submit">
+                送信
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-slate-500 dark:text-slate-400">
+        <p>© 2025 Makito Komi. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
